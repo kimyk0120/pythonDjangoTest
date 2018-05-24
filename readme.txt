@@ -9,3 +9,8 @@ Django 서버 실행
 # python manage.py runserver
 # 다른 포트(8080) 사용시
 # python manage.py runserver 8080
+
+
+
+
+#
