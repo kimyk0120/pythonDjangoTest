@@ -102,6 +102,45 @@ c1.v1 = 50
 # print(c2.add())
 # print(c2.subtract())
 
+'''
+new-style 클래스와 old-style클래스의 차이
+
+Python 3.x:
+
+class MyClass(object): new-style 클래스
+class MyClass: new-style 클래스 (명시하지 않아도 자동으로 상속)
+'''
+
+
+class CLass1(object):
+    def method1(self):
+        return 'm1'
+
+
+c1 = CLass1()
+# print(c1, c1.method1())
+
+
+class Class3(CLass1):
+    def method2(self): return 'm2'
+
+
+class CLass2(object):
+    def method1(self):
+        return 'm1'
+
+    def method2(self):
+        return 'm2'
+
+
+c2 = CLass2()
+# print(c2,c2.method1())
+# print(c2,c2.method2())
+
+c3 = Class3()
+# print(c3,c3.method1())
+# print(c3,c3.method2())
+
 
 
 
